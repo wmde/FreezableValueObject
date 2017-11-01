@@ -1,6 +1,6 @@
 # FreezableValueObject
 
-[![Build Status](https://travis-ci.org/WMDE/FreezableValueObject.svg?branch=master)](https://travis-ci.org/WMDE/FreezableValueObject)
+[![Build Status](https://travis-ci.org/wmde/FreezableValueObject.svg?branch=master)](https://travis-ci.org/wmde/FreezableValueObject)
 
 PHP Trait for creating freezable value objects.
 
