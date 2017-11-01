@@ -1,4 +1,4 @@
-# PHP Project Template
+# FreezableValueObject
 
 [![Build Status](https://travis-ci.org/WMDE/FreezableValueObject.svg?branch=master)](https://travis-ci.org/WMDE/FreezableValueObject)
 
