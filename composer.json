@@ -1,7 +1,7 @@
 {
-	"name": "such/new-project",
+	"name": "wmde/freezable-value-object",
 	"license": "GPL-2.0+",
-	"description": "",
+	"description": "PHP Trait for creating freezable value objects",
 	"require": {
 		"php": ">=7.1"
 	},
@@ -15,12 +15,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Such\\NewProject\\": "src/"
+			"WMDE\\FreezableValueObject\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"Such\\NewProject\\Tests\\": "tests/"
+			"WMDE\\FreezableValueObject\\Tests\\": "tests/"
 		}
 	},
 	"extra": {
