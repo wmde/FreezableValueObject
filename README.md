@@ -1,6 +1,7 @@
 # FreezableValueObject
 
 [![Build Status](https://travis-ci.org/wmde/FreezableValueObject.svg?branch=master)](https://travis-ci.org/wmde/FreezableValueObject)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wmde/FreezableValueObject/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wmde/FreezableValueObject/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/wmde/freezable-value-object/version.png)](https://packagist.org/packages/wmde/freezable-value-object)
 [![Download count](https://poser.pugx.org/wmde/freezable-value-object/d/total.png)](https://packagist.org/packages/wmde/freezable-value-object)
 
