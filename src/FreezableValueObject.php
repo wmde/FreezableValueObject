@@ -5,21 +5,18 @@ declare( strict_types = 1 );
 namespace WMDE\FreezableValueObject;
 
 /**
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 trait FreezableValueObject {
 
-	private $isFrozen = false;
+	private bool $isFrozen = false;
 
 	public function freeze(): self {
 		$this->isFrozen = true;
 		return $this;
 	}
 
-	/**
-	 * @throws \RuntimeException
-	 */
 	protected function assertIsWritable(): self {
 		if ( $this->isFrozen ) {
 			throw new \RuntimeException( 'Cannot write to a frozen object!' );
@@ -27,11 +24,6 @@ trait FreezableValueObject {
 		return $this;
 	}
 
-	/**
-	 * Throws an exception if any of the fields have null as value.
-	 *
-	 * @throws \RuntimeException
-	 */
 	public function assertNoNullFields(): self {
 		foreach ( get_object_vars( $this ) as $fieldName => $fieldValue ) {
 			if ( $fieldValue === null ) {

@@ -10,7 +10,7 @@ use RuntimeException;
  * @covers \WMDE\FreezableValueObject\FreezableValueObject
  * @covers \WMDE\FreezableValueObject\Tests\Unit\FrozenValueObject
  *
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class FreezableValueObjectTest extends \PHPUnit\Framework\TestCase {

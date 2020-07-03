@@ -1,8 +1,8 @@
-version: '2'
+version: '3.4'
 
 services:
   app:
-    image: php:7.1-cli
+    image: php:7.4-cli
     volumes:
       - ./:/usr/src/app
     working_dir: /usr/src/app
