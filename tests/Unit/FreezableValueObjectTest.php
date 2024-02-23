@@ -69,7 +69,7 @@ class FreezableValueObjectTest extends \PHPUnit\Framework\TestCase {
 		$object = new FrozenValueObject();
 
 		$this->expectException( RuntimeException::class );
-		$this->expectExceptionMessageRegExp( '/Field \'[a-zA-Z]+\' cannot be null/' );
+		$this->expectExceptionMessageMatches( '/Field \'[a-zA-Z]+\' cannot be null/' );
 		$object->assertNoNullFields();
 	}
 

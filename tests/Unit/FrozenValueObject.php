@@ -13,11 +13,14 @@ use WMDE\FreezableValueObject\FreezableValueObject;
 class FrozenValueObject {
 	use FreezableValueObject;
 
-	private $mainContent;
-	private $headerContent;
-	private $footerContent;
+	private ?string $mainContent = null;
+	private ?string $headerContent = null;
+	private ?string $footerContent = null;
 
 	public function getMainContent(): string {
+		if ( $this->mainContent === null ) {
+			throw new \RuntimeException( "Field mainContent cannot be null" );
+		}
 		return $this->mainContent;
 	}
 
@@ -27,6 +30,9 @@ class FrozenValueObject {
 	}
 
 	public function getHeaderContent(): string {
+		if ( $this->headerContent === null ) {
+			throw new \RuntimeException( "Field headerContent cannot be null" );
+		}
 		return $this->headerContent;
 	}
 
@@ -36,6 +42,9 @@ class FrozenValueObject {
 	}
 
 	public function getFooterContent(): string {
+		if ( $this->footerContent === null ) {
+			throw new \RuntimeException( "Field footerContent cannot be null" );
+		}
 		return $this->footerContent;
 	}
 
