@@ -19,7 +19,7 @@ class FrozenValueObject {
 
 	public function getMainContent(): string {
 		if ( $this->mainContent === null ) {
-			throw new \RuntimeException( "Field mainContent cannot be null" );
+			throw new \LogicException( "You must set a value before calling " . __METHOD__ );
 		}
 		return $this->mainContent;
 	}
@@ -31,7 +31,7 @@ class FrozenValueObject {
 
 	public function getHeaderContent(): string {
 		if ( $this->headerContent === null ) {
-			throw new \RuntimeException( "Field headerContent cannot be null" );
+			throw new \LogicException( "You must set a value before calling " . __METHOD__ );
 		}
 		return $this->headerContent;
 	}
@@ -43,7 +43,7 @@ class FrozenValueObject {
 
 	public function getFooterContent(): string {
 		if ( $this->footerContent === null ) {
-			throw new \RuntimeException( "Field footerContent cannot be null" );
+			throw new \LogicException( "You must set a value before calling " . __METHOD__ );
 		}
 		return $this->footerContent;
 	}
